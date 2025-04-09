@@ -80,7 +80,7 @@ function Cadastro() {
               id="nome"
               name="nome"
               placeholder="Nome"
-              className="border-2 border-slate-700 rounded p-2"
+              className="border-2 border-slate-700 rounded p-2"            
              value = {usuario.nome}
              onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
@@ -96,7 +96,8 @@ function Cadastro() {
               value = {usuario.usuario}
              onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
-          </div>
+          </div> 
+          
           <div className="flex flex-col w-full">
             <label htmlFor="foto">Foto</label>
             <input
@@ -143,11 +144,10 @@ function Cadastro() {
               Cancelar
             </button>
             <button 
-                type='submit'
-                className='rounded text-white bg-indigo-400 
-                           hover:bg-indigo-900 w-1/2 py-2
-                           flex justify-center' 
-                >
+                type='submit'              
+                className='rounded text-black bg-yellow-300 
+           hover:bg-yellow-600 w-1/2 py-2
+           flex justify-center'>
                   {isLoading ? <RotatingLines
                     strokeColor="white"
                     strokeWidth="5"
